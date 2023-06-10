@@ -1,26 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Wifi</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+/>
 </head>
-<body>
-  <h1>Welcome to the Protected Page</h1>
-  <p>This page requires authentication.</p>
-  
-  <form id="login-form">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
+<body class="bg-dark">
+    <div class="container">
+        <hr class="fw-bold border border-info mt-4 ms-3 me-3 border-5 rounded">
+        <div id="title" class="row mt-4">
+            <div class="col">
+                <h1 class="text-center text-white bg-info pt-3 pb-3 ms-3 me-3 rounded-5">Home Wifi</h1>
+            </div>
+        </div>
+        <hr class="fw-bold border border-info ms-3 me-3 mb-4 border-5 rounded-5">
+        <div id="change-pass" class="row m-3 p-4 border border-4 border-info-subtle rounded-5">
+            <h2 class="text-center text-info">Cara Mengganti Password</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <b>Langkah 1</b>: Buka laman 192.168.1.1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="my-text-justif">
+                                <li>Buka browser (Google Chrome / Mozilla Firefox / Microsoft Edge) di Laptop kamu.</li>
+                                <li>Lalu ketik 192.168.1.1 di address bar seperti gambar di bawah.</li>
+                                <li>Terakhir tekan tombol enter.</li>
+                            </ul>
+                            <a href="assets/images/1-buka-laman-192.168.1.1.png" data-fancybox="gallery" data-caption="Buka laman 192.168.1.1"><img src="assets/images/1-buka-laman-192.168.1.1.png" alt="Buka browser (Google Chrome/Mozilla Firefox/Microsoft Edge) di Laptop kamu." title="Buka browser (Google Chrome/Mozilla Firefox/Microsoft Edge) di Laptop kamu." width="50%" class="mx-auto d-block rounded-5"></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <b>Langkah 2</b>: Masukkan Username dan Password
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="my-text-justify">
+                                    <li>Masukkan username dan password yang sudah diberikan sebelumnya.</li>
+                                    <li>Jika sudah, silahkan tombol enter.</li>
+                                    <a href="assets/images/2-masukkan-username-dan-password.png" data-fancybox="gallery" data-caption="Masukkan username dan password"><img src="assets/images/2-masukkan-username-dan-password.png" alt="Masukkan username dan password yang sudah diberikan sebelumnya." title="Langkah 2: Masukkan Username dan Password" width="50%" class="mx-auto d-block rounded-5"></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <b>Langkah 3</b>: Mengganti Password
+                            </button>
+                        </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Pilih menu <b>Local Network</b><a href="assets/images/3-a-pilih-menu-local-network.png" data-fancybox="gallery" data-caption="Pilih menu Local Network"><img src="assets/images/3-a-pilih-menu-local-network.png" alt="Pilih menu Local Network" title="Pilih menu Local Network" width="50%" class="mx-auto d-block rounded-5"></a></li>
+                                <li>Lalu pilih menu <b>WLAN</b><a href="assets/images/3-b-lalu-pilih-menu-wlan.png" data-fancybox="gallery" data-caption="Pilih menu WLAN"><img src="assets/images/3-b-lalu-pilih-menu-wlan.png" alt="Lalu pilih menu WLAN" title="Lalu pilih menu WLAN" width="50%" class="mx-auto d-block rounded-5"></a></li>
+                                <li>Pilih <b>WLAN SSID Configuration</b><a href="assets/images/3-c-pilih-wlan-ssid-configuration.png" data-fancybox="gallery" data-caption="Pilih WAN SSID Configuration"><img src="assets/images/3-c-pilih-wlan-ssid-configuration.png" alt="Pilih WLAN SSID Configuration" title="Pilih WLAN SSID Configuration" width="50%" class="mx-auto d-block rounded-5"></a></li>
+                                <li>Scroll ke bawah dan pilih nama jaringan WiFi yang ingin diganti passwordnya.,<a href="assets/images/3-d-ganti-wpa-passphrase.png" data-fancybox="gallery" data-caption="Ganti WPA Passphrase / Password"><img src="assets/images/3-d-ganti-wpa-passphrase.png" alt="Ganti WPA Passphrase" title="Ganti WPA Passphrase" width="50%" class="mx-auto d-block rounded-5"></a><div class="alert alert-info" role="alert">Terlihat bahwa contoh password dari WiFi tersebut adalah <b>password baru 123 !@#</b>, kita bisa mengganti passsword tersebut dengan menlanjutkan langkah di bawah ini.</div></li>
+                                <li>Silahkan ganti password pada kolom <b>WPA Passphrase</b>.<a href="assets/images/3-e-ganti-wpa-passphrase-baru.png" data-fancybox="gallery" data-caption="Ganti Password menjadi baru"><img src="assets/images/3-e-ganti-wpa-passphrase-baru.png" alt="Ganti Password menjadi baru" title="Ganti Password menjadi baru" width="50%" class="mx-auto d-block rounded-5"></a><div class="alert alert-warning" role="alert"><p>Perlu diperhatikan saat membuat password baru bahwa <i><u>huruf kecil</u></i> dan <i><u>huruf besar</u></i> dianggap berbeda. Sehingga password <b>"Password Baru"</b> dengan <b>"password baru"</b> dianggap berbeda dan tidak sama.</p><p>Hal tersebut menyebabkan ketika kamu membuat password <b>password123</b>, lalu kamu menyambung WiFi dengan menggunakan <b>Password123</b> maka dipastikan tidak akan pernah dapat tersambung ke WiFi.</p><p>Jadi, silahkan diingat dan dicatat password WiFi yang sudah diperbaharui, dan perhatikan besar kecil hurufnya.</p></div></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-danger" role="alert">Kamu juga bisa mengganti nama WiFi di bagian <b>SSID Name</b>, namun ini tidak wajib dilakukan ya.</div>
+                                </div>
+                                <div class="col">
+                                    <div class="alert alert-primary" role="alert">Dalam case ini, kita akan mengubah password WiFi yang bernama <b>"WiFi Bukan Sembarang WiFi"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
+
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-    
-    <button type="submit" id="login-btn">Log In</button>
-  </form>
-  
-  <script src="script.js"></script>
+    <!-- Intialize Fancy Box -->
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+          //
+        });    
+    </script>
 </body>
 </html>
